@@ -1,0 +1,151 @@
+body {
+    background: #16161a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1{
+    color: $orange-500;
+}
+
+.navbar{
+    background: rgb(37, 37, 37);
+}
+
+.navbar-brand {
+    color: #ff8906;
+}
+
+.nav-link {
+    color:  #ff8906;
+}
+
+.dropdown-item {
+    color: #16161a;
+}
+
+.custom-navbar-toggler {
+    border-color: #ff8906;
+}
+
+.btn{
+    background: red;
+}
+
+nav {
+    background: #16161a;
+    color: blueviolet;
+    height: 70px;
+    border: 2px solid #16161a;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+
+}
+
+.nav-link:hover {
+    color:white;
+}
+
+.navbar-brand:hover {
+    color:white;
+}
+
+.dropdown-toggle:focus { 
+    color:white;
+}
+
+.container-fluid {
+    background: #16161a;
+    color: aliceblue;
+}
+.text-center{
+    color: white;
+}
+
+.card {
+    background: rgb(37, 37, 37);
+    color: white;
+    margin: 5px;
+}
+
+:root {
+    --max: 39rem
+}
+
+.img-fluid{
+    width: 100%;
+    max-width: var(--max);
+    height: calc(var(--max));
+    object-fit: fill;
+
+}
+
+.card-img-top {
+    width: 100%;
+    max-width: var(--max);
+    height: calc(var(--max));
+    object-fit: fill;
+}
+
+.card-img-top1{
+    width: 100%;
+    height: calc(var(--max));
+    object-fit: fill;
+}
+
+.card-img-top2{
+    width: 100%;
+    height: calc(1000px);
+    object-fit: fill;
+}
+
+.card-img-top-inv{
+    padding: 5px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: justify;
+}
+
+.card-inventory-body{
+    text-decoration: none;
+    color: #ff8906;
+}
+
+
+
+
+.titulo{
+    text-align: center;
+    color: orange;
+}
+
+.form-label {
+    color: white;
+}
+
+.form-text {
+    color: white;
+}
+
+.form-check-label {
+    color: white;
+}
+
+.card1 {
+    background: #16161a;
+}
+
+.card3 {
+    background: rgb(37, 37, 37);
+    color: white;
+}
+
+.bi{
+    color: #ff8906;
+}
+
+

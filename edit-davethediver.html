@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actualizando productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/stylesheet.css" type="text/css" rel="css/stylesheet" />
+</head>
+
+<body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="img/logogiga3.png" alt="Logo" width="56" height="50" class="d-inline-block  text-center">
+                GigaGames
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1>
+            Editando: Dave The Diver
+        </h1>
+        
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="card text-bg-dark" style="max-width: 200px;">
+            <img src="img/davethediver.png" class="card-img" alt="...">
+        </div>
+    </div>
+
+<!--Formularios-->
+    <div class="d-flex justify-content-center">
+        <div class="m-4" style="max-width: 800px;">
+
+            <div class="container mt-3 mb-3">
+                <h3>
+                    Datos generales:
+                </h3>
+            </div>
+
+            <form id="editar-item">
+                <div id="editar-item-datos-generales" class="row">
+
+                    <div class="mb-3 col-12 col-sm-12 col-md-6">
+                        <label for="idNombreItem" form="editar-item" class="form-label">Nombre del item:</label>
+                        <input type="text" class="form-control" name="nombre-item" id="idNombreItem" value="Dark and Darker">
+                        <small class="text-danger" id="nombre-item-error"></small>
+                    </div>
+
+                    <div class="mb-3 col-12 col-sm-12 col-md-6">
+                        <label for="idPrecioItem" form="editar-item" class="form-label">Precio del item:</label>
+                        <input type="text" class="form-control" name="precio-item" id="idPrecioItem" value="$11.500">
+                        <small class="text-danger" id="precio-item-error"></small>
+                    </div>
+
+                    <div class="mb-3 col-12">
+                        <label for="idImagenItem" form="editar-item" class="form-label">Imagen de portada:</label>
+                        <input type="file" class="form-control" name="imagen-item" id="idImagenItem" value="davethediver.png">
+                        <small class="text-danger" id="imagen-item-error"></small>
+                    </div>
+
+                    <div class="mb-3 col-12">
+                        <label for="idDescripcionItem" form="editar-item" class="form-label">Descripción del item:</label>
+                        <textarea class="form-control" id="idDescripcionItem" name="descripcion-item" rows="3">DAVE THE DIVER es un juego casual de rol y aventuras para un solo jugador que incluye elementos de pesca y exploración del fondo marino durante el día y de gestión de un restaurante de sushi durante la noche.</textarea>
+                        <small class="text-danger" id="descripcion-item-error"></small>
+                    </div>
+                </div>
+
+
+                <div class="container mt-3 mb-3">
+                    <h3>
+                        Requisitos:
+                    </h3>
+                </div>
+
+
+                <div class="row">
+                    <div id="editar-item-requisitos-min" class="mb-3 col-12 col-sm-12 col-md-6">
+
+                        <h4 class="col-12">
+                            Mínimos:
+                        </h4>
+
+                        <div class="mb-3 col">
+                            <label for="ReqSOMin" form="editar-item" class="form-label">SO:</label>
+                            <input type="text" class="form-control" name="req-so-min" id="ReqSOMin" value="Windows 7 64-bit">
+                            <small class="text-danger" id="req-so-min-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqProceMin" form="editar-item" class="form-label">Procesador:</label>
+                            <input type="text" class="form-control" name="req-proce-min" id="ReqProceMin" value="Intel Core i3 Dual Core">
+                            <small class="text-danger" id="req-proce-min-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqRAMMin" form="editar-item" class="form-label">Memoria RAM:</label>
+                            <input type="text" class="form-control" name="req-ram-min" id="ReqRAMMin" value="8 GB">
+                            <small class="text-danger" id="req-ram-min-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqGPUMin" form="editar-item" class="form-label">Gráficos:</label>
+                            <input type="text" class="form-control" name="req-gpu-min" id="ReqGPUMin" value="NVIDIA Geforce GTS 450 / AMD Radeon HD 5570">
+                            <small class="text-danger" id="req-gpu-min-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqDXMin" form="editar-item" class="form-label">DirectX:</label>
+                            <input type="text" class="form-control" name="req-dx-min" id="ReqDXMin" value="Versión 11">
+                            <small class="text-danger" id="req-dx-min-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqDiskMin" form="editar-item" class="form-label">Almacenamiento:</label>
+                            <input type="text" class="form-control" name="req-disk-min" id="ReqDiskMin" value="10 GB">
+                            <small class="text-danger" id="req-disk-min-error"></small>
+                        </div>
+                    </div>
+
+                    <div id="editar-item-requisitos-req" class="mb-3 col-12 col-sm-12 col-md-6">
+
+                        <h4 class="col-12">
+                            Recomendados:
+                        </h4>
+
+                        <div class="mb-3 col">
+                            <label for="ReqSORec" form="editar-item" class="form-label">SO:</label>
+                            <input type="text" class="form-control" name="req-so-rec" id="ReqSORec" value="Windows 10/11 64-bit">
+                            <small class="text-danger" id="req-so-rec-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqProceRec" form="editar-item" class="form-label">Procesador:</label>
+                            <input type="text" class="form-control" name="req-proce-rec" id="ReqProceRec" value="Intel Core i5 - i7 Quad Core">
+                            <small class="text-danger" id="req-proce-rec-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqRAMRec" form="editar-item" class="form-label">Memoria RAM:</label>
+                            <input type="text" class="form-control" name="req-ram-rec" id="ReqRAMRec" value="16 GB">
+                            <small class="text-danger" id="req-ram-rec-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqGPURec" form="editar-item" class="form-label">Gráficos:</label>
+                            <input type="text" class="form-control" name="req-gpu-rec" id="ReqGPURec" value="NVIDIA Geforce GTX 750Ti / AMD Radeon R9 270x">
+                            <small class="text-danger" id="req-gpu-rec-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqDXRec" form="editar-item" class="form-label">DirectX:</label>
+                            <input type="text" class="form-control" name="req-dx-rec" id="ReqDXRec" value="Versión 11">
+                            <small class="text-danger" id="req-dx-rec-error"></small>
+                        </div>
+
+                        <div class="mb-3 col">
+                            <label for="ReqDiskRec" form="editar-item" class="form-label">Almacenamiento:</label>
+                            <input type="text" class="form-control" name="req-disk-rec" id="ReqDiskRec" value="10 GB">
+                            <small class="text-danger" id="req-disk-rec-error"></small>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="mb-3 col-12 col-sm-6" align="center">
+                        <button type="submit" class="btn btn-primary">Actualizar</button>
+                    </div>
+
+                    <div class="mb-3 col-12 col-sm-6" align="center">
+                        <button type="reset" class="btn btn-primary">Limpiar campos</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item"><a href="policy.html" class="nav-link px-2 text-body-secondary">Políticas</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">&copy; 2023 Gigagames, Inc</p>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/validacion-registrar-producto.js"></script>
+
+</body>
+
+</html>
